@@ -21,6 +21,14 @@ public class ServiceCode {
 		return repo.findAll();
 	}
 	
+	@GetMapping("/first")
+	public String retAA() {
+		return "Jagad Janani Sarada Devi";
+	}
+	
+	
+	
+	
 	@PostMapping("/ins/{id}/{name}/{email}")
 	public String insRegs(@PathVariable("id") int id,@PathVariable("name") String name,@PathVariable("email") String email) {
 		String status="inserted";
